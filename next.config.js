@@ -1,7 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
 }
 
-module.exports = nextConfig
+//video 5 de next los crea y en el vido 8 borra información 
