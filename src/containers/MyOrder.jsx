@@ -15,11 +15,11 @@ const MyOrder = () => {
 
     return (
         <aside className={styles.MyOrder}>
-            <div className="title-container">
-                <img src={arrow} alt="arrow" />
-                <p className="title">My order</p>
+            <div className={styles['title-container']}>
+                <img src={`/${arrow}`} alt="arrow" />
+                <p className={styles.title}>My order</p>
             </div>
-            <div className="my-order-content">
+            <div className={styles['my-order-content']}>
                 {state.cart.map(product => (
                     <OrderItem product={product} key={'orderItem-${product.id}'} />
                 ))} 

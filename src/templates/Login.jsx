@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import '@styles/Login.scss';
+import logo from '@logos/logo_yard_sale.svg';
+import styles from '@styles/Login.module.scss';
 
 const Login = () => {
   const form = useRef(null);
@@ -15,23 +16,23 @@ const Login = () => {
   }
 
     return (
-        <div className="login">
-        <div className="login-container">
-          <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
-          <form action="/" className="form" ref={form}>
-            <label htmlFor="email" className="label">Email address</label>
-            <input type="text" name="email" placeholder="platzi@example.cm" className="input input-email" />
-            <label htmlFor="password" className="label">Password</label>
-            <input type="password" name="password" placeholder="*********" className="input input-password" />
+        <div className={styles.login}>
+        <div className={styles['login-container']}>
+          <img src={`/${logo}`}  alt="logo" className={styles.logo} />
+          <form action="/" className={styles.form} ref={form}>
+            <label htmlFor="email" className={styles.label}>Email address</label>
+            <input type="text" name="email" placeholder="platzi@example.cm" className={styles['input input-email']} />
+            <label htmlFor="password" className={styles.label}>Password</label>
+            <input type="password" name="password" placeholder="*********" className={styles['input input-password']} />
             <button 
             onClick={handleSubmit} 
-            className="primary-button login-button" >
+            className={styles['primary-button login-button']} >
               Log in
             </button>
             <a href="/">Forgot my password</a>
           </form>
           <button 
-          className="secondary-button signup-button" >Sing up
+          className={styles['secondary-button signup-button']}>Sing up
           </button>
         </div>
       </div>

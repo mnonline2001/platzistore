@@ -25,9 +25,17 @@ const Header = () => {
 
     return (
         <nav className={styles.Nav}>
-            <Image src={menu} alt="menu" className={styles.menu} />
+            <Image src={`/${menu}`} alt="menu" className={styles.menu} 
+            width="100%"
+            height="100%" 
+            layout="responsive" 
+            />
             <div className={styles['navbar-left']}>
-                <Image src={logo} alt="logo" className={styles['nav-logo']} />
+                <Image src={`/${logo}`} alt="logo" className={styles['nav-logo']} 
+                width="100%"
+                height="100%" 
+                layout="responsive"    
+                />
 
                 <ul>
                     <li>
@@ -56,7 +64,11 @@ const Header = () => {
                         platzi@example.com
                     </li>
                     <li className={styles['navbar-shopping-cart']} onClick={handleToggleOrders}>
-                        <Image src={shoppingCart} alt="shopping cart" />
+                        <Image src={`/${shoppingCart}`} alt="shopping cart" 
+                        width="100%"
+                        height="100%" 
+                        layout="responsive" 
+                        />
                         {state.cart.length > 0 ?  <div>{state.cart.length}</div> : null }
                     </li>
                 </ul>
