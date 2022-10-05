@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import arrow from '@icons/flechita.svg';
@@ -23,15 +24,15 @@ const MyOrder = () => {
                 {state.cart.map(product => (
                     <OrderItem product={product} key={'orderItem-${product.id}'} />
                 ))} 
-                <div className="order">
+                <div className={styles.order}>
                     <p>
                         <span>Total</span>
                     </p>
                     <p>${sumTotal()}</p>
                 </div>
-                <button className="primary-button">
+                <Link className={styles['primary-button']} href="/checkout">
                     Checkout
-                </button>
+                </Link>
             </div>
         </aside> 
     );

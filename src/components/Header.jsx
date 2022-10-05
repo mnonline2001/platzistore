@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
@@ -31,11 +32,13 @@ const Header = () => {
             layout="responsive" 
             />
             <div className={styles['navbar-left']}>
-                <Image src={`/${logo}`} alt="logo" className={styles['nav-logo']} 
-                width="100%"
-                height="100%" 
-                layout="responsive"    
-                />
+                <Link href="/">
+                    <Image src={`/${logo}`} alt="logo" className={styles['nav-logo']} 
+                    width="100%"
+                    height="100%" 
+                    layout="responsive"    
+                    />
+                </Link>
 
                 <ul>
                     <li>

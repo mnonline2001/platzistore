@@ -32,10 +32,19 @@ const ProductItem = ({ product }) => {
             <figure className={styles['more-clickable-area']} 
             onClick={() => handleClick(product)} >
 
-              {state.cart.includes(product) ? <img className={styles['disabled add-to-cart-btn']}
-              src={addedToCartImage}
-            alt="added to cart" /> : <img className={styles['add-to-cart-btn pointer']}
-             src={addToCartImage} alt="kkkk" />
+              {state.cart.includes(product) ? <Image className={styles['disabled add-to-cart-btn']}
+              src={`/${addedToCartImage}`}
+            alt="added to cart" 
+            width="100%"
+            height="100%" 
+            layout="responsive" 
+            /> : <Image className={styles['add-to-cart-btn pointer']}
+             src={`/${addToCartImage}`}
+             alt="kkkk" 
+             width="100%"
+             height="100%" 
+             layout="responsive" 
+             />
               }
              </figure>
           </div>
