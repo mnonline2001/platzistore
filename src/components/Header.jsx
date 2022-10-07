@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
-import Order from '@components/Order';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import AppContext from '@context/AppContext';
@@ -59,7 +58,7 @@ const Header = () => {
             platzi@example.com
           </li>
           <li className={styles['navbar-shopping-cart']} onClick={handleToggleOrders}>
-            <Image src={`/${shoppingCart}`} alt="shopping cart" width="100%" height="100%" layout="responsive" />
+            <Image src={shoppingCart} alt="shopping cart" width="23px" height="23px" />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>
