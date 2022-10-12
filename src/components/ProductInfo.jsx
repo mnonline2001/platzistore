@@ -1,27 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import addToCartImage from '@icons/bt_add_to_cart.svg'
-import styles from '@styles/ProductInfo.module.scss'
+import addToCartImage from '@icons/bt_add_to_cart.svg';
+import styles from '@styles/ProductInfo.module.scss';
 
 const ProductInfo = () => {
-    return (
-        <>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
-          <div className={styles.ProductInfo}>
-            <p>$35,00</p>
-            <p>Bike</p>
-            <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-            <button className={styles['primary-button add-to-cart-button']}>
-            <Image src={`/${addToCartImage}`} alt="add to cart" 
-             width="100%"
-             height="100%" 
-             layout="responsive" 
-            />
-            Add to cart
-            </button>
-          </div>
-        </>
-    );
-}
+  return (
+    <>
+      <Image src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" width="23px" height="23px" />
+      <div className={styles.ProductInfo}>
+        <p>$35,00</p>
+        <p>Bike</p>
+        <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
+        <button className={styles['primary-button add-to-cart-button']}>
+          <Image src={addToCartImage} alt="add to cart" width="23px" height="23px" />
+          Add to cart
+        </button>
+      </div>
+    </>
+  );
+};
 
 export default ProductInfo;
