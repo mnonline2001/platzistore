@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>React Shop</title>
+          {/*<title>React Shop</title>*/}
           {/*<script dangerouslySetImerHTML={ __html: ''}  />*/}
           {/*    dentro de las comillas invertidas copiar la información dada en google analitic*/}
         </Head>
