@@ -20,10 +20,12 @@
 .title-container img {
     transform: rotate(180deg);
     margin-right: 14px;
+
 }
 .title {
     font-size: $--lg;
     font-weight: bold;
+    margin-left: 10px;
 }
 .order {
     display: grid;

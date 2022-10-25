@@ -18,7 +18,7 @@ const MyOrder = () => {
   return (
     <aside className={styles.MyOrder}>
       <div className={styles['title-container']}>
-        <Image src={arrow} alt="arrow" width="23px" height="23px" />
+        <Image src={arrow} alt="arrow" width="10px" height="10px" />
         <p className={styles.title}>My order</p>
       </div>
       <div className={styles['my-order-content']}>
