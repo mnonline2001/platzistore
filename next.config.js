@@ -12,6 +12,7 @@ module.exports = {
       'upload.wikimedia.org',
       'paceimg.com',
       'firebasestorage.googleapis.com',
+      'myimage.com',
     ],
   },
 };

@@ -12,5 +12,5 @@ const ShoppingCartItem = () => {
     </div>
   );
 };
-
+0                                                                                                                                                                                           ,,,,,,,,,,,,,,,,,,, , ,
 export default ShoppingCartItem;
