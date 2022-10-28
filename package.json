@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "slint src/ --fix"
+    "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
     "axios": "^0.27.2",
