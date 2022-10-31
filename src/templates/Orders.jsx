@@ -11,9 +11,9 @@ const Orders = () => {
                     <OrderItem />
                 </div>
             </div>
-            
+
         </div>
     );
-}
+};
 
 export default Orders;

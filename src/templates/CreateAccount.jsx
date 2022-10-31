@@ -20,7 +20,7 @@ const CreateAccount = () => {
       </div>
     </div>
     );
-}
+};
 
 export default CreateAccount;
 

@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import styles from '@styles/MyAccount.module.scss';
 
 const MyAccount = () => {
@@ -20,6 +20,6 @@ const MyAccount = () => {
         </div>
       </div>
     );
-}
+};
 
 export default MyAccount;

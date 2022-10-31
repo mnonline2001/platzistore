@@ -11,9 +11,9 @@ const Login = () => {
     const data = {
       usename: formData.get('email'),
       password: formData.get('password')
-    }
+    };
     console.log(data);
-  }
+  };
 
     return (
         <div className={styles.login}>
@@ -24,14 +24,14 @@ const Login = () => {
             <input type="text" name="email" placeholder="platzi@example.cm" className={styles['input input-email']} />
             <label htmlFor="password" className={styles.label}>Password</label>
             <input type="password" name="password" placeholder="*********" className={styles['input input-password']} />
-            <button 
-            onClick={handleSubmit} 
+            <button
+            onClick={handleSubmit}
             className={styles['primary-button login-button']} >
               Log in
             </button>
             <a href="/">Forgot my password</a>
           </form>
-          <button 
+          <button
           className={styles['secondary-button signup-button']}>Sing up
           </button>
         </div>

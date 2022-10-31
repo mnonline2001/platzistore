@@ -1,6 +1,6 @@
 import React from 'react';
 import OrderItem from '../components/OrderItem';
-import Menu from '../components/Menu';
+// import Menu from '../components/Menu';
 import '@styles/Checkout.scss';
 
 
@@ -18,10 +18,10 @@ const Checkout = () => {
                     <p>$560.00</p>
                   </div>
                </div>
-               <OrderItem /> 
+               <OrderItem />
             </div>
-        </div>       
+        </div>
     );
-}
+};
 
 export default Checkout;
