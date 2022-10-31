@@ -29,6 +29,7 @@ const ProductItem = ({ product }) => {
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
+
         <figure className={styles['more-clickable-area']} onClick={() => handleClick(product)}>
           {state.cart.includes(product) ? (
             <Image className={`${styles.disabled} ${styles['add-to-cart-btn']}`} src={addedToCartImage} alt="added to cart" width="35px" height="35px" />
