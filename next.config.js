@@ -13,6 +13,7 @@ module.exports = {
       'paceimg.com',
       'firebasestorage.googleapis.com',
       'myimage.com',
+      'www.shutterstock.com',
     ],
   },
 };
