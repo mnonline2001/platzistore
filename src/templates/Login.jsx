@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Link from "next/link";
 import Image from "next/image";
 import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/Login.module.scss';
@@ -30,7 +31,10 @@ const Login = () => {
             className={styles['primary-button login-button']} >
               Log in
             </button>
-            <a href="/">Forgot my password</a>
+            <Link href="/">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>Forgot my password</a>
+            </Link>
           </form>
           <button
           className={styles['secondary-button signup-button']}>Sing up
