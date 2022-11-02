@@ -14,8 +14,15 @@ module.exports = {
       'firebasestorage.googleapis.com',
       'myimage.com',
       'www.shutterstock.com',
+      'cdnmedia.220-volt.ru',
+        'www.100bestbooks.ru',
+        'items.s1.citilink.ru',
     ],
   },
 };
+
+
+
+
 
 //video 5 de next los crea y en el vido 8 borra información

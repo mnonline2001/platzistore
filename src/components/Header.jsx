@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <nav className={styles.Nav}>
-        <img src={menu.src} alt="menu" className={styles.menu} width="23px" height="23px" />
+        < Image src={menu.src} alt="menu" className={styles.menu} width="23px" height="23px" />
         <div className={styles['navbar-left']}>
           <Link href="/" passHref>
             <Image src={logo} alt="logo" className={styles['nav-logo']} width="100px" height="50px" />
